@@ -1,3 +1,6 @@
+// Please use the following url to reference the library in production
+// https://cdn.rawgit.com/WesternMailing/mc/master/WMFunctions.js
+
 function haveDetailsChanged(form, flagField) {
 
     // Address check functionality:
@@ -30,6 +33,8 @@ function haveDetailsChanged(form, flagField) {
 }
 
 function enforceHTTPS() {
+
+	// This function is required for any 2G campaign to enforce any pages to be accessed using https
     if (location.protocol != 'https:') {
         location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
     }
