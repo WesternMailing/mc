@@ -32,6 +32,17 @@ var details = {
             }
         });
     }
+};
+
+
+function concatenateFields() {
+
+    // grabs any arguments, concatenates them into a single string and returns them
+    var result = '';
+    for (var i = 0; i < arguments.length; i++) {
+        result += $(arguments[i]).val();
+    }
+    return result;
 }
 
 function enforceHTTPS() {
