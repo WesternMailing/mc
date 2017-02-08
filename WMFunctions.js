@@ -3,6 +3,7 @@
 
 var details = {
 
+    // grab the original values for a form via a data-update-check attribute
     setOriginals: function(form) {
         var $inputsToCheck = $(form).find('*[data-update-check="true"]');
         var originalVals = '';
@@ -12,6 +13,7 @@ var details = {
         });
     },
 
+    // grab the updated values for a form and check them against the original values
     checkNew: function(form) {
         var $inputsToCheck = $(form).find('*[data-update-check="true"]');
         var newVals = '';
