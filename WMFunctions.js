@@ -35,7 +35,7 @@ var details = {
 };
 
 
-function concatenateFields() {
+function concatenate() {
 
     // grabs any arguments, concatenates them into a single string and returns them
     var result = '';
